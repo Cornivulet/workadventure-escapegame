@@ -82,12 +82,12 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("a15","Châtaignier : " + "__7_",[]);
     })
 
-    WA.room.onEnterLayer('MaisonForet/A16').subscribe(() => {
+    WA.room.onEnterLayer('MaisonForet/a16zone').subscribe(() => {
         currentPopup = WA.ui.openPopup("a16","Châtaignier : " + "___8",[]);
     })
 
     // Frêne
-    WA.room.onEnterLayer('MaisonForeta17zone').subscribe(() => {
+    WA.room.onEnterLayer('MaisonForet/a17zone').subscribe(() => {
         currentPopup = WA.ui.openPopup("a17","Frêne : " + "5__",[]);
     })
 
@@ -219,7 +219,7 @@ WA.onInit().then(() => {
     WA.room.onLeaveLayer('MaisonForet/a33zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a34zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a35zone').subscribe(closePopUp)
-    WA.room.onLeaveLayer('MaisonForet/a6zone').subscribe(closePopUp)
+    WA.room.onLeaveLayer('MaisonForet/a36zone').subscribe(closePopUp)
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
