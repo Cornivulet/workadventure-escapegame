@@ -13,9 +13,15 @@ export function trees(){
 
     return (
         // Waiting for the API to be ready
-WA.onInit().then(() => {
+    WA.onInit().then(() => {
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
+
+    /* 
+        Les arbres sont au nombre de 33
+        A1 = Arbre 1
+        A1Popup = Popup de l'arbre 1
+    */
 
     // Chène
     WA.room.onEnterLayer('MaisonForet/a1zone').subscribe(() => {
@@ -177,13 +183,25 @@ WA.onInit().then(() => {
         currentPopup = WA.ui.openPopup("a36","Sorbier : " + "___4",[]);
     })
 
-    /* 
-        Les arbres sont au nombre de 33
-        A1 = Arbre 1
-        A1Popup = Popup de l'arbre 1
-    */
+    // Les statues qui donneront l'enigme pour découvrir les bons arbres
 
-    WA.room.onLeaveLayer('clockZone').subscribe(closePopUp)
+    WA.room.onEnterLayer('MaisonForet/statusForetZone1').subscribe(() => {
+        currentPopup = WA.ui.openPopup("s1","Je suis seul mais en couple, J'enfile mon crochet devant certains, Il en faut deux pour être en accord, Je suis caché mais on me retrouve deux fois ",[]);
+    })    
+
+    WA.room.onEnterLayer('MaisonForet/statusForetZone2').subscribe(() => {
+        currentPopup = WA.ui.openPopup("s2","Je suis la lettre la plus tranchante",[]);
+    })    
+
+    WA.room.onEnterLayer('MaisonForet/statusForetZone3').subscribe(() => {
+        currentPopup = WA.ui.openPopup("s3","Je suis le commencement de l’effroi, La fin de la durée et de l’espace, Le commencement de toutes extrémités",[]);
+    })    
+
+    WA.room.onEnterLayer('MaisonForet/statusForetZone4').subscribe(() => {
+        currentPopup = WA.ui.openPopup("s4","Je suis tout au bout de ta main, je commence la nuit et je finis demain",[]);
+    })    
+
+    //fermetures des popups d'arbres
     WA.room.onLeaveLayer('MaisonForet/a1zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a2zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a3zone').subscribe(closePopUp)
@@ -220,6 +238,12 @@ WA.onInit().then(() => {
     WA.room.onLeaveLayer('MaisonForet/a34zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a35zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a36zone').subscribe(closePopUp)
+
+    // fermeture des popups de statues
+    WA.room.onLeaveLayer('MaisonForet/statusForetZone1').subscribe(closePopUp)
+    WA.room.onLeaveLayer('MaisonForet/statusForetZone2').subscribe(closePopUp)
+    WA.room.onLeaveLayer('MaisonForet/statusForetZone3').subscribe(closePopUp)
+    WA.room.onLeaveLayer('MaisonForet/statusForetZone4').subscribe(closePopUp)
 
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
