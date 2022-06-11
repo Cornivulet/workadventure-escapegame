@@ -17,6 +17,11 @@ export function trees(){
     console.log('Scripting API ready');
     console.log('Player tags: ',WA.player.tags)
 
+    // Tutoriel de la foret
+    WA.room.onEnterLayer('MaisonForet/tutoZone').subscribe(() => {
+        currentPopup = WA.ui.openPopup("tutoForet","Afin de pouvoir vous enfuir, vous devez trouver le code de la barrière qui mène à la barque. La solution se trouve sur les arbres. Mais seul un arbre contient le bon code. Aidez vous des quatres statues pour trouver le bon arbre. Chaque énigme de statues donne une lettre du bon arbre.",[]);
+    })
+
     /* 
         Les arbres sont au nombre de 33
         A1 = Arbre 1
@@ -201,7 +206,10 @@ export function trees(){
         currentPopup = WA.ui.openPopup("s4","Je suis tout au bout de ta main, je commence la nuit et je finis demain",[]);
     })    
 
-    //fermetures des popups d'arbres
+    // fermeture de la popup de tuto
+    WA.room.onLeaveLayer('MaisonForet/tutoZone').subscribe(closePopUp)
+
+    // fermetures des popups d'arbres
     WA.room.onLeaveLayer('MaisonForet/a1zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a2zone').subscribe(closePopUp)
     WA.room.onLeaveLayer('MaisonForet/a3zone').subscribe(closePopUp)
