@@ -16,13 +16,22 @@ export function room1(){
       WA.onInit().then(() => {
             console.log('Scripting API ready for room1');
             console.log('Player tags: ',WA.player.tags)
-            WA.room.onEnterLayer('MaisonDebut/popups/statueM1Zone').subscribe(() => {
-                const today = new Date();
-                const time = today.getHours() + ":" + today.getMinutes();
-                currentPopup = WA.ui.openPopup("statue1Popup","It's " + time,[]);
+            WA.room.onEnterLayer('MaisonDebut/statue1Zone').subscribe(() => {
+                // const today = new Date();
+                // const time = today.getHours() + ":" + today.getMinutes();
+                currentPopup = WA.ui.openPopup("statue1Popup"," Pas de pieds, pas de mains, pas d’ailes, mais je monte au ciel. Qui suis-je ?",[]);
             })
-            WA.room.onLeaveLayer('MaisonDebut/statueM1Zone').subscribe(closePopUp)
-            // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
+            WA.room.onLeaveLayer('MaisonDebut/statue1Zone').subscribe(closePopUp)
+            // pop up miroir
+            WA.room.onEnterLayer('MaisonDebut/miroirZone').subscribe(() => {
+              currentPopup = WA.ui.openPopup("miroirPopup"," Le miroir est propre.",[]);
+            })
+            WA.room.onLeaveLayer('MaisonDebut/miroirZone').subscribe(closePopUp)
+            // pop up cheminee
+            WA.room.onEnterLayer('MaisonDebut/chemineeZone').subscribe(() => {
+              currentPopup = WA.ui.openPopup("chemineePopup"," Le feu de la cheminée est allumé depuis peu.",[]);
+            })
+            WA.room.onLeaveLayer('MaisonDebut/chemineeZone').subscribe(closePopUp)
             bootstrapExtra().then(() => {
               console.log('Scripting API Extra ready');
           }).catch(e => console.error(e));
