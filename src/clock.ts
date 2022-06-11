@@ -47,8 +47,6 @@ export function clock(){
     })
 
     WA.room.onEnterLayer('MaisonTemps/clockZone4').subscribe(() => {
-        const today = new Date();
-        const time = today.getHours() + ":" + today.getMinutes();
         currentPopup = WA.ui.openPopup("clockPopup4","Cette horloge semble cassé",[]);
     })
 
