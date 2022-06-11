@@ -30,15 +30,15 @@ export function trees(){
 
     // Chène
     WA.room.onEnterLayer('MaisonForet/a1zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a1","Chêne : " + "1___",[]);
+        currentPopup = WA.ui.openPopup("a1","Frêne : " + "5__",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a2zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a2","Chêne : " + "_9__",[]);
+        currentPopup = WA.ui.openPopup("a2","Sorbier : " + "___4",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a3zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a3","Chêne : " + "__5_",[]);
+        currentPopup = WA.ui.openPopup("a3","Sapin : " + "8___",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a4zone').subscribe(() => {
@@ -55,24 +55,24 @@ export function trees(){
     })
 
     WA.room.onEnterLayer('MaisonForet/a7zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a7","Pin : " + "__6_",[]);
+        currentPopup = WA.ui.openPopup("a7","Érable : " + "__4_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a8zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a8","Pin : " + "___3",[]);
+        currentPopup = WA.ui.openPopup("a8","Frêne : " + "__3_",[]);
     })
 
     // Érable
     WA.room.onEnterLayer('MaisonForet/a9zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a9","Érable : " + "3___",[]);
+        currentPopup = WA.ui.openPopup("a9","Prunier : " + "__8_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a10zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a10","Érable : " + "_7__",[]);
+        currentPopup = WA.ui.openPopup("a10","Sorbier : " + "0___",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a11zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a11","Érable : " + "__4_",[]);
+        currentPopup = WA.ui.openPopup("a11","Pin : " + "__6_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a12zone').subscribe(() => {
@@ -82,7 +82,7 @@ export function trees(){
     // Châtaignier
 
     WA.room.onEnterLayer('MaisonForet/a13zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a13","Châtaignier : " + "4___",[]);
+        currentPopup = WA.ui.openPopup("a13","Prunier : " + "_4__",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a14zone').subscribe(() => {
@@ -90,24 +90,24 @@ export function trees(){
     })
 
     WA.room.onEnterLayer('MaisonForet/a15zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a15","Châtaignier : " + "__7_",[]);
+        currentPopup = WA.ui.openPopup("a15","Sapin : " + "__9_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a16zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a16","Châtaignier : " + "___8",[]);
+        currentPopup = WA.ui.openPopup("a16","Sorbier : " + "_7__",[]);
     })
 
     // Frêne
     WA.room.onEnterLayer('MaisonForet/a17zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a17","Frêne : " + "5__",[]);
+        currentPopup = WA.ui.openPopup("a17","Cerisier : " + "_3__",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a18zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a18","Frêne : " + "_5__",[]);
+        currentPopup = WA.ui.openPopup("a18","Chêne : " + "1___",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a19zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a19","Frêne : " + "__3_",[]);
+        currentPopup = WA.ui.openPopup("a19","Cerisier : " + "___1",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a20zone').subscribe(() => {
@@ -120,11 +120,11 @@ export function trees(){
     })
 
     WA.room.onEnterLayer('MaisonForet/a22zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a22","Prunier : " + "_4__",[]);
+        currentPopup = WA.ui.openPopup("a22","Châtaignier : " + "4___",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a23zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a23","Prunier : " + "__8_",[]);
+        currentPopup = WA.ui.openPopup("a23","Érable : " + "3___",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a24zone').subscribe(() => {
@@ -137,11 +137,11 @@ export function trees(){
     })
 
     WA.room.onEnterLayer('MaisonForet/a26zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a26","Cerisier : " + "_3__",[]);
+        currentPopup = WA.ui.openPopup("a26","Frêne : " + "5__",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a27zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a27","Cerisier : " + "__2_",[]);
+        currentPopup = WA.ui.openPopup("a27","Pin : " + "___3",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a28zone').subscribe(() => {
@@ -151,7 +151,7 @@ export function trees(){
     // Sapin
 
     WA.room.onEnterLayer('MaisonForet/a29zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a29","Sapin : " + "8___",[]);
+        currentPopup = WA.ui.openPopup("a29","Chêne : " + "__5_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a30zone').subscribe(() => {
@@ -159,7 +159,7 @@ export function trees(){
     })
 
     WA.room.onEnterLayer('MaisonForet/a31zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a31","Sapin : " + "__9_",[]);
+        currentPopup = WA.ui.openPopup("a31","Châtaignier : " + "__7_",[]);
     })
 
     WA.room.onEnterLayer('MaisonForet/a32zone').subscribe(() => {
@@ -170,12 +170,12 @@ export function trees(){
     // Sorbier
 
     WA.room.onEnterLayer('MaisonForet/a33zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a33","Sorbier : " + "0___",[]);
+        currentPopup = WA.ui.openPopup("a33","Érable : " + "_7__",[]);
     })
 
 
     WA.room.onEnterLayer('MaisonForet/a34zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a34","Sorbier : " + "_7__",[]);
+        currentPopup = WA.ui.openPopup("a34","Châtaignier : " + "___8",[]);
     })
 
 
@@ -185,7 +185,7 @@ export function trees(){
 
 
     WA.room.onEnterLayer('MaisonForet/a36zone').subscribe(() => {
-        currentPopup = WA.ui.openPopup("a36","Sorbier : " + "___4",[]);
+        currentPopup = WA.ui.openPopup("a36","Chêne : " + "_9__",[]);
     })
 
     // Les statues qui donneront l'enigme pour découvrir les bons arbres
