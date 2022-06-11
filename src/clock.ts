@@ -19,11 +19,11 @@ export function clock(){
 
     // les deux statues donnant l'énigme
     WA.room.onEnterLayer('MaisonTemps/statusTempsZone1').subscribe(() => {
-        currentPopup = WA.ui.openPopup("status1Room2","Une horloge ajoute 15 minutes de temps. Son heure est la seconde partie du code",[]);
+        currentPopup = WA.ui.openPopup("status1Room2","Une horloge ajoute 15 minutes de temps. Son heure est la première partie du code",[]);
     })
 
     WA.room.onEnterLayer('MaisonTemps/statusTempsZone2').subscribe(() => {
-        currentPopup = WA.ui.openPopup("status2Room2","Une horloge ajoute 1 heure de temps. Ses minutes sont la première partie du code",[]);
+        currentPopup = WA.ui.openPopup("status2Room2","Une horloge ajoute 1 heure de temps. Ses minutes sont la seconde partie du code",[]);
     })
 
     // Les horloges, seules deux d'entre elles contiennent le code le porte
