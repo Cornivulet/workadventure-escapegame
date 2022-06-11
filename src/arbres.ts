@@ -14,7 +14,7 @@ export function trees(){
     return (
         // Waiting for the API to be ready
     WA.onInit().then(() => {
-    console.log('Scripting API ready');
+    console.log('Scripting API ready for forest');
     console.log('Player tags: ',WA.player.tags)
 
     /* 
